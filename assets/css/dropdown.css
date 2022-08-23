@@ -1,0 +1,99 @@
+html, 
+.root{
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+section{
+  color: #FFFFFF;
+  margin-top: 4rem;
+  margin: 0;
+  align-items: center;
+  width: 1216px;
+}
+h1{
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+}
+.span{
+  position: absolute;
+  width: 277px;
+  height: 44px;
+  left: 939px;
+  top: 9px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 22px;
+  text-align: right;
+  color: #787878;
+}
+p{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #787878;
+}
+details[open] summary ~ * {
+  animation: open 0.3s ease-in-out;
+
+}
+@keyframes open {
+  0%
+  {
+    opacity: 0;
+  }
+  100%
+  {
+    opacity: 1;
+  }
+}
+.dropdown{
+  position: relative;
+
+}
+details summary::-webkit-details-marker{
+  display: none;
+}
+details summary{
+  width: 100%;
+  padding: 1rem 0;
+  border-top: 1px solid white;
+  position: relative;
+  cursor: pointer;
+  /* font-weight: 600; */
+  font-size: 20px;
+  /* line-height: 40px; */
+  list-style: none;
+}
+details summary::after{
+  content: "+";
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 200;
+  transform-origin: center;
+}
+details[open] summary::after {
+  content: "-";
+  position: absolute;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 200;
+  transform-origin: center;
+  font-size: 3rem;
+
+}
+details summary {
+  outline: 0;
+}
+details p{
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+}
